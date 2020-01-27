@@ -2,7 +2,7 @@
 #!/usr/bin/python
 
 import sys, os
-sys.path.append(os.path.join(os.path.dirname(__file__), "/root/tools/basic/api_v1/"))
+sys.path.append(os.path.join(os.path.dirname(__file__), "/root/tools"))
 
 from optparse    import OptionParser
 from prettytable import PrettyTable
@@ -207,7 +207,7 @@ def get_l2_ctrl(vn):
          _l2,
          _l3,
          controller
-    )                           = key
+    ) = key
     (
         _protocol,
         _last_modified,
@@ -226,7 +226,7 @@ def get_l2_ctrl(vn):
         _flags,
         _sequence_no,
         _tunnel_encap
-    )                           = value
+    ) = value
 
     if options.brief_flag:
       table.add_row([

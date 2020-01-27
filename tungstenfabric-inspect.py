@@ -153,20 +153,13 @@ def get_l2_ctrl(vn):
                  'prot',
                  'last_modified',
                  'lp',
-                 #'med',
                  'las',
                  'pas',
                  'peer_router_id',
                  'source',
                  'nexthop',
                  'label',
-                 #'replicated',
-                 #'secondary_tables',
-                 #'communities',
-                 #'origin_vn',
-                 #'flags',
                  'seq',
-                 #'tunnel_encap'
           ]
 
   table = PrettyTable(header)
@@ -255,8 +248,7 @@ def get_l2_ctrl(vn):
                    _next_hop,
                    _source,
                    _label,
-                   _sequence_no,
-                   #_tunnel_encap
+                   _sequence_no
                 ])
 
 
